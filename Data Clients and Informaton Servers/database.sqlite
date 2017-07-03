@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>European Soccer Database | Kaggle</title>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow"/>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link href="/content/v/d420a040e581/kaggle/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic" rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/kaggle-newworld-sitelayout.css?v=4809cd15a1fe" />
+    <link rel="stylesheet" type="text/css" href="/static/css/kaggle-newworld.css?v=1c3863966bbc" />
+
+    <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+        function i(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s="AuthenticatedUserContext",h="start",c="stop",l="Track",a=l+"Event",v=l+"Page",y=u.createElement(o),r,f;y.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(y);try{t.cookie=u.cookie}catch(p){}for(t.queue=[],t.version="1.0",r=["Event","Exception","Metric","PageView","Trace","Dependency"];r.length;)i("track"+r.pop());return i("set"+s),i("clear"+s),i(h+a),i(c+a),i(h+v),i(c+v),i("flush"),config.disableExceptionTracking||(r="onerror",i("_"+r),f=e[r],e[r]=function(config,i,u,e,o){var s=f&&f(config,i,u,e,o);return s!==!0&&t["_"+r](config,i,u,e,o),s}),t
+        }({
+            instrumentationKey:"5b3d6014-f021-4304-8366-3cf961d5b90f"
+        });
+
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+
+    
+    
+    
+ 
+    
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-12629138-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+            <script>
+            (function() {
+                console.log(
+                    " _                       _       \n" +
+                    "| |    Welcome to       | |      \n" +
+                    "| | __ ___   __ _  __ _ | | ___  \n" +
+                    "| |/ /|__ \\ / _` |/ _` || |/ _ \\ \n" +
+                    "|   < / _  | (_| | (_| || |  __/ \n" +
+                    "|_|\\_\\\\__,_|\\__, |\\__, ||_|\\___| \n" +
+                    "             __/ | __/ |         \n" +
+                    "            |___/ |___/          \n\n" +
+                    "I see you are really digging into    \n" +
+                    "our site! Well, if you like what you \n" +
+                    "see and are interested in becoming   \n" +
+                    "part of our tight-knit team, head to \n" +
+                    "https://www.kaggle.com/careers ᕕ(ᐛ)ᕗ\n" +
+                    "We're remote-friendly and maintain a \n" +
+                    "low-ego culture. Seriously, check us \n" +
+                    "out.                                 \n\n" +
+                    "the Kaggle team <3"
+                );
+            })();
+        </script>
+    
+
+    <script>
+          window.intercomSettings = {
+            app_id: "koj6gxx6"
+          };
+    </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/koj6gxx6';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets"/>
+    <meta name="og:url" content="https://www.kaggle.com/hugomathien/soccer" />
+    <meta name="og:title" content="European Soccer Database" />
+    <meta name="og:description" content="25k+ matches, players &amp; teams attributes for European Professional Football" />
+    <meta name="og:image" content="https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-card.jpg" />
+
+
+</head>
+<body>
+    
+
+
+
+<div class="site-layout">
+        <div class="site-layout__header">
+            <div id="react-SiteHeaderContainer-2"></div>
+        </div>
+
+    <div class="site-layout__main-content">
+        
+
+<div id="react-DatasetContainer-1"></div>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            preferredFont: "TeX",
+            availableFonts: ["STIX", "TeX"],
+            linebreaks: {
+                automatic: true
+            },
+            EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+        },
+        tex2jax: {
+            inlineMath: [["\\\\(", "\\\\)"]],
+            displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+            processEscapes: true,
+            ignoreClass: "tex2jax_ignore|dno"
+        },
+        TeX: {
+            noUndefined: {
+                attributes: {
+                    mathcolor: "red",
+                    mathbackground: "#FFEEEE",
+                    mathsize: "90%"
+                }
+            }
+        },
+        Macros: {
+            href: "{}"
+        },
+        messageStyle: "none"
+    });
+</script>
+<script type="text/javascript" async crossorigin="anonymous" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+    </div>
+
+        <div class="site-layout__footer">
+            <footer class="site-footer">
+    <div class="site-footer__content">
+        <div class="site-footer__copyright">
+            <span>&copy; 2017 Kaggle Inc</span>
+        </div>
+        <nav class="site-footer__nav">
+            <a href="/team">Our Team</a>
+            <a href="/careers">Careers</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
+            <a href="/contact">Contact/Support</a>
+        </nav>
+        <nav class="site-footer__social">
+            <a class="site-footer__social--twitter" href="http://www.twitter.com/kaggle" title="Follow Kaggle on Twitter"></a>
+            <a class="site-footer__social--facebook" href="http://www.facebook.com/kaggle" title="Follow Kaggle on Facebook"></a>
+            <a class="site-footer__social--linkedin" href="http://www.linkedin.com/companies/kaggle" title="Follow Kaggle on LinkedIn"></a>
+        </nav>
+    </div>
+</footer>
+
+
+        </div>
+</div>
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+    Kaggle.Current = {
+        isAnonymous: true,
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+</script>
+
+
+
+
+
+<script type="text/javascript">
+    var Kaggle = Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+<script type="text/javascript" src="/content/v/4e8d906fe022/shared/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/static/js/react.min.js"></script>
+<script type="text/javascript" src="/static/js/react-dom.min.js"></script>
+<script type="text/javascript" src="/static/vendor.js?v=3089b04517cc"></script>
+<script type="text/javascript" src="/static/react-components.js?v=f97baf3e268b"></script><script type="text/javascript">
+ReactDOM.render(React.createElement(KaggleReactComponents.DatasetContainer, {"datasetVersionId":589,"datasetVersionNumber":10,"lastVersionNumber":10,"status":"ready","isSavingNewVersion":false,"newDatasetVersionStatus":"ready","currentStatusPercentComplete":1.0,"datasetUrl":"/hugomathien/soccer","datasetExternalUrl":"https://www.kaggle.com/hugomathien/soccer","originalImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-original.jpg","coverImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-cover.jpg","cardImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-card.jpg","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","license":"Database released under \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003eOpen Database License\u003c/a\u003e, individual papers copyright their original authors","voteCount":427,"upVoteUrl":"/hugomathien/soccer/vote","ownerProfileUrl":"/hugomathien","ownerAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/655525-fb.jpg","ownerDisplayName":"Hugo Mathien","ownerSlug":"hugomathien","creatorUserId":655525,"creatorDisplayName":"Hugo Mathien","ownerTwitter":null,"lastUpdated":"2016-10-23T22:31:38.527Z","downloadUrl":"/hugomathien/soccer/downloads/soccer.zip","downloadSize":36121187,"newNotebookUrl":"/hugomathien/soccer/kernels/notebooks/new","newScriptUrl":"/hugomathien/soccer/kernels/scripts/new","hasAlreadyVotedUp":false,"isOldDatasetVersion":false,"maxUncompressedFileBytesAllowed":524288000,"maxCompressedFileBytesAllowed":524288000,"maxTopLevelFilesAllowed":20,"numberOfViews":158035,"numberOfDownloads":19725,"numberOfScripts":698,"numberOfTopics":79,"privateGroupMemberCount":0,"canEdit":false,"canEditSlug":false,"canEditPublishStatus":false,"canEditFeatureStatus":false,"canEditPrivateGroup":false,"canEditDescription":false,"isNewDataset":false,"hideVersionStatuses":true,"cardImageLeft":1719,"cardImageTop":718,"cardImageWidth":1698,"cardImageHeight":1698,"coverImageLeft":0,"coverImageTop":947,"coverImageWidth":5432,"coverImageHeight":1143,"scripts":[{"name":"The fans stay loyal, the players move on","url":"/nappon/d/hugomathien/soccer/the-fans-stay-loyal-the-players-move-on","lastRunDate":"2016-07-28T18:33:00.837Z","totalVotes":109},{"name":"Top 20 football players","url":"/erykwalczak/d/hugomathien/soccer/top-20-football-players","lastRunDate":"2016-07-13T22:45:39.523Z","totalVotes":57},{"name":"The Most Predictable League ","url":"/yonilev/d/hugomathien/soccer/the-most-predictable-league","lastRunDate":"2016-07-24T22:27:31.76Z","totalVotes":37}],"discussions":[{"title":"If football players were betting on themselves","url":"/cactusplants/d/hugomathien/soccer/if-football-players-were-betting-on-themselves/discussion","lastPost":"2017-03-10T20:52:46.083Z","totalReplies":5},{"title":"Naive betting analysis","url":"/sadz2201/d/hugomathien/soccer/naive-betting-analysis/discussion","lastPost":"2017-03-04T09:08:46.097Z","totalReplies":3},{"title":"New version of the database","url":"/forums/f/1357/european-soccer-database/t/24678/new-version-of-the-database","lastPost":"2017-03-03T12:19:02.073Z","totalReplies":10}],"contributors":[{"userId":466454,"totalScriptVotes":114,"totalScripts":2,"totalForumMessages":18,"totalForumMessageVotes":9,"totalScore":143.0,"displayName":"Uwe Sterr","userUrl":"/nappon","rank":"1st","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/466454-fb.jpg"},{"userId":313914,"totalScriptVotes":57,"totalScripts":1,"totalForumMessages":2,"totalForumMessageVotes":4,"totalScore":64.0,"displayName":"Eryk Walczak","userUrl":"/erykwalczak","rank":"2nd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/313914-fb.jpg"},{"userId":137427,"totalScriptVotes":37,"totalScripts":1,"totalForumMessages":7,"totalForumMessageVotes":4,"totalScore":49.0,"displayName":"Yoni Lev","userUrl":"/yonilev","rank":"3rd","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/137427-fb.jpg"}],"licenses":[{"id":1,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/publicdomain/zero/1.0/\u0022 target=\u0022_blank\u0022\u003eCC0: Public Domain License\u003c/a\u003e","displaySequence":1},{"id":3,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/licenses/by-nc-sa/4.0/\u0022 target=\u0022_blank\u0022\u003eCC BY-NC-SA 4.0 License\u003c/a\u003e","displaySequence":2},{"id":8,"description":"Released Under \u003ca href=\u0022https://creativecommons.org/licenses/by-sa/4.0/\u0022 target=\u0022_blank\u0022\u003eCC BY-SA 4.0 License\u003c/a\u003e","displaySequence":3},{"id":5,"description":"Database released under \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003eOpen Database License\u003c/a\u003e, individual contents under \u003ca href=\u0022http://opendatacommons.org/licenses/dbcl/1.0/\u0022 target=\u0022_blank\u0022\u003eDatabase Contents License\u003c/a\u003e","displaySequence":5},{"id":12,"description":"Other (specified above)","displaySequence":100000},{"id":4,"description":"Unknown License","displaySequence":100001},{"id":6,"description":"Database released under \u003ca href=\u0022http://opendatacommons.org/licenses/odbl/1.0/\u0022 target=\u0022_blank\u0022\u003eOpen Database License\u003c/a\u003e, individual papers copyright their original authors","displaySequence":null}],"pageMessages":[],"feed":[{"activityType":"scriptComment","url":"/cactusplants/d/hugomathien/soccer/if-football-players-were-betting-on-themselves/comments","userName":"cactusplants","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/535127-fb.jpg","date":"2017-03-10T20:52:46.083Z","userDisplayName":"cactusplants","title":"If football players were betting on themselves","versionNumber":0,"userUrl":"/cactusplants"},{"activityType":"scriptComment","url":"/cactusplants/d/hugomathien/soccer/if-football-players-were-betting-on-themselves/comments","userName":"binghanwu","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/default-thumb.png","date":"2017-03-10T17:27:23.877Z","userDisplayName":"Binghan_Wu","title":"If football players were betting on themselves","versionNumber":0,"userUrl":"/binghanwu"},{"activityType":"scriptRun","url":"/kevinho7393/d/hugomathien/soccer/soccer-analysis","userName":"kevinho7393","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/940210-fb.jpg","date":"2017-03-07T14:25:21.813Z","userDisplayName":"KevinHo","title":"Soccer Analysis","versionNumber":5,"userUrl":"/kevinho7393"},{"activityType":"script","url":"/mythrij/d/hugomathien/soccer/mythri","userName":"mythrij","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/943799-gp.jpg","date":"2017-03-06T16:44:36.043Z","userDisplayName":"MythriJonnavittula","title":"mythri","versionNumber":1,"userUrl":"/mythrij"},{"activityType":"scriptComment","url":"/sadz2201/d/hugomathien/soccer/naive-betting-analysis/comments","userName":"thomasjuma","userAvatarUrl":"https://kaggle2.blob.core.windows.net/avatars/thumbnails/default-thumb.png","date":"2017-03-04T09:08:46.097Z","userDisplayName":"ThomasJuma","title":"Naive betting analysis","versionNumber":0,"userUrl":"/thomasjuma"}],"privateGroups":[],"owners":[],"discussion":{"canDownvote":false,"dataUrl":"/forums/1357/topics.json","id":1357,"isRootLevel":false,"isSubscribed":false,"initialTopics":null,"paramValues":{"category":"all","kind":"all","page":1,"search":null,"group":"all","sortBy":"hot"}},"newTopicUrl":"/forums/topics/new?forumId=1357","currentTab":"home","topicId":null,"isNewTopic":false,"newTopic":{"allowAttachments":false,"authorRanking":null,"authorTier":"novice","authorType":"topic","forumId":1357,"parentName":"European Soccer Database","parentUrl":"/hugomathien/soccer"},"dataDictionary":[],"datasetId":63,"title":"European Soccer Database","overview":"25k+ matches, players \u0026 teams attributes for European Professional Football","licenseId":6,"description":"The ultimate Soccer database for data analysis and machine learning\n-------------------------------------------------------------------\n\n**What you get:**\n\n - +25,000 matches\n - +10,000 players\n - 11 European Countries with their lead championship\n - Seasons 2008 to 2016\n - Players and Teams\u0027 attributes* sourced from EA Sports\u0027 FIFA video game series, including the weekly updates\n - Team line up with squad formation (X, Y coordinates)\n - Betting odds from up to 10 providers\n - Detailed match events (goal types, possession, corner, cross, fouls, cards etc...) for +10,000 matches\n\n**16th Oct 2016: New table containing teams\u0027 attributes from FIFA !*\n\n----------\n\n**Original Data Source:** \n\nYou can easily find data about soccer matches but they are usually scattered across different websites. A thorough data collection and processing has been done to make your life easier. **I must insist that you do not make any commercial use of the data**. The data was sourced from:\n\n - [http://football-data.mx-api.enetscores.com/][1] : scores, lineup, team formation and events\n\n - [http://www.football-data.co.uk/][2] : betting odds. [Click here to understand the column naming system for betting odds:][3] \n\n - [http://sofifa.com/][4] : players and teams attributes from EA Sports FIFA games. *FIFA series and all FIFA assets property of EA Sports.*\n\n\n\u003e When you have a look at the database, you will notice foreign keys for\n\u003e players and matches are the same as the original data sources. I have\n\u003e called those foreign keys \u0022api_id\u0022.\n\n----------\n\n**Improving the dataset:** \n\nYou will notice that some players are missing from the lineup (NULL values). This is because I have not been able to source their attributes from FIFA. This will be fixed overtime as the crawling algorithm is being improved.\nThe dataset will also be expanded to include international games, national cups, Champion\u0027s League and Europa League. Please ask me if you\u0027re after a specific tournament.\n\n\u003e Please get in touch with me if you want to help improve this dataset. \n\n[CLICK HERE TO ACCESS THE PROJECT GITHUB][5]\n\n*Important note for people interested in using the crawlers:* since I first wrote the crawling scripts (in python), it appears sofifa.com has changed its design and with it comes new requirements for the scripts. The existing script to crawl players (\u0027Player Spider\u0027) will not work until i\u0027ve updated it.\n\n----------\nExploring the data:\n\nNow that\u0027s the fun part, there is a lot you can do with this dataset. I will be adding visuals and insights to this overview page but please have a look at the kernels and give it a try yourself ! Here are some ideas for you:\n\n**The Holy Grail...**\n... is obviously to predict the outcome of the game. The bookies use 3 classes (Home Win, Draw, Away Win). They get it right about 53% of the time. This is also what I\u0027ve achieved so far using my own SVM. Though it may sound high for such a random sport game, you\u0027ve got to know\n that the home team wins about 46% of the time. So the base case (constantly predicting Home Win) has indeed 46% precision. \n\n**Probabilities vs Odds**\n\nWhen running a multi-class classifier like SVM you could also output a probability estimate and compare it to the betting odds. Have a look at your variance vs odds and see for what games you had very different predictions.\n\n**Explore and visualize features**\n\nWith access to players and teams attributes, team formations and in-game events you should be able to produce some interesting insights into [The Beautiful Game][6] . Who knows, Guardiola himself may hire one of you some day!\n\n\n  [1]: http://football-data.mx-api.enetscores.com/\n  [2]: http://www.football-data.co.uk/\n  [3]: http://www.football-data.co.uk/notes.txt\n  [4]: http://sofifa.com/\n  [5]: https://github.com/hugomathien/football-data-collection/tree/master/footballData\n  [6]: https://en.wikipedia.org/wiki/The_Beautiful_Game","slug":"soccer","isPublished":true,"isRemoved":false,"isFeatured":true,"organizationId":null,"privateGroupId":null,"files":[{"id":1762,"name":"database.sqlite","url":"/hugomathien/soccer/downloads/database.sqlite.zip","description":"DATABASE V2 : Contains everything from V1 + some fixes (missing games, full team names) and a new table with Team attributes","totalBytes":36121187,"blobToken":null,"previewUrl":"/hugomathien/soccer/preview/database.sqlite.zip/10","fileType":".sqlite","downloadUrl":"/hugomathien/soccer/downloads/database.sqlite.zip","relativePath":"../input/database.sqlite","isSqliteTable":false,"totalRows":0,"columns":null},{"id":0,"name":"Country","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Country/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":11,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"name","dataType":"TEXT","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"League","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/League/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":11,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"country_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"name","dataType":"TEXT","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"Match","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Match/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":25979,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"country_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"league_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"season","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"stage","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"date","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"match_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_team_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_team_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_team_goal","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_team_goal","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_X11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_X11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_Y11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_Y11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"home_player_11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_1","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_2","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_3","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_4","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_5","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_6","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_7","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_8","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_9","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_10","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"away_player_11","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"goal","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"shoton","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"shotoff","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"foulcommit","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"card","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"cross","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"corner","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"possession","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"B365H","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"B365D","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"B365A","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BWH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BWD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BWA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"IWH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"IWD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"IWA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"LBH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"LBD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"LBA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"PSH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"PSD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"PSA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"WHH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"WHD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"WHA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"SJH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"SJD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"SJA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"VCH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"VCD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"VCA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"GBH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"GBD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"GBA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BSH","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BSD","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false},{"name":"BSA","dataType":"NUMERIC","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"Player","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Player/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":11060,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"player_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"player_name","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"player_fifa_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"birthday","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"height","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"weight","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"Player_Attributes","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Player_Attributes/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":183978,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"player_fifa_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"player_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"date","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"overall_rating","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"potential","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"preferred_foot","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"attacking_work_rate","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"defensive_work_rate","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"crossing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"finishing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"heading_accuracy","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"short_passing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"volleys","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"dribbling","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"curve","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"free_kick_accuracy","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"long_passing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"ball_control","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"acceleration","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"sprint_speed","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"agility","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"reactions","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"balance","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"shot_power","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"jumping","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"stamina","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"strength","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"long_shots","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"aggression","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"interceptions","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"positioning","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"vision","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"penalties","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"marking","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"standing_tackle","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"sliding_tackle","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"gk_diving","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"gk_handling","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"gk_kicking","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"gk_positioning","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"gk_reflexes","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"sqlite_sequence","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/sqlite_sequence/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":7,"columns":[{"name":"name","dataType":"","isNullable":true,"isPrimaryKey":false},{"name":"seq","dataType":"","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"Team","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Team/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":299,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"team_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"team_fifa_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"team_long_name","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"team_short_name","dataType":"TEXT","isNullable":true,"isPrimaryKey":false}]},{"id":0,"name":"Team_Attributes","url":null,"description":null,"totalBytes":0,"blobToken":null,"previewUrl":"/hugomathien/soccer/sqlite-preview/Team_Attributes/10","fileType":".sqlitetable","downloadUrl":null,"relativePath":null,"isSqliteTable":true,"totalRows":1458,"columns":[{"name":"id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":true},{"name":"team_fifa_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"team_api_id","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"date","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlaySpeed","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlaySpeedClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlayDribbling","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlayDribblingClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlayPassing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlayPassingClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"buildUpPlayPositioningClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationPassing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationPassingClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationCrossing","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationCrossingClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationShooting","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationShootingClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"chanceCreationPositioningClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"defencePressure","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"defencePressureClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"defenceAggression","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"defenceAggressionClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"defenceTeamWidth","dataType":"INTEGER","isNullable":true,"isPrimaryKey":false},{"name":"defenceTeamWidthClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false},{"name":"defenceDefenderLineClass","dataType":"TEXT","isNullable":true,"isPrimaryKey":false}]}],"newVersionFiles":[],"datasetVersions":[{"id":589,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-10-23T22:31:38.527Z","versionNumber":10,"versionNotes":"Added a few missing games from the English Premier League. Change the wording from \u0022stats\u0022 to \u0022attributes\u0022 when talking about FIFA player\u0027s attributes. Changed the teams\u0027 long name to their real long name (example: Bordeaux becomes Girondins de Bordeaux). Added a new table with Teams\u0027 attributes (i.e: style of play) from FIFA video games","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/10","status":"ready"},{"id":588,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-10-23T22:10:48.043Z","versionNumber":9,"versionNotes":"DATABASE V2 : Contains everything from V1 + some fixes (missing games, full team names) and a new table with Team attributes","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/9","status":"ready"},{"id":541,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-10-16T19:34:19.553Z","versionNumber":8,"versionNotes":"NEW VERSION WORK IN PROGRESS. RELEASE EXPECTED OCT 17th","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/8","status":"ready"},{"id":540,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-10-16T10:18:10.27Z","versionNumber":7,"versionNotes":"V2: Fixed missing games, improved the wording and added teams attributes table","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/7","status":"ready"},{"id":166,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-07-20T07:21:54.557Z","versionNumber":6,"versionNotes":"Dataset with ingame events","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/6","status":"ready"},{"id":157,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-07-14T20:11:57.42Z","versionNumber":5,"versionNotes":"Database without in-game events","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/5","status":"ready"},{"id":156,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-07-14T19:41:28.653Z","versionNumber":4,"versionNotes":"Matches with in game events part 1","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/4","status":"ready"},{"id":155,"slug":"soccer","name":"European Soccer Database","creationDate":"2016-07-12T18:43:25.693Z","versionNumber":3,"versionNotes":"Corrected an error with players XY positions: Home players XY was always equal to Away players XY","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/3","status":"ready"},{"id":154,"slug":"soccer","name":"Soccer database, +25K matches and players stats","creationDate":"2016-07-11T18:12:07Z","versionNumber":2,"versionNotes":"Fixed missing matches and players. Reviewed use of foreign keys. Added historical betting odds","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/2","status":"ready"},{"id":153,"slug":"soccer","name":"Soccer database, +25K matches and players stats","creationDate":"2016-07-09T19:40:44.957Z","versionNumber":1,"versionNotes":"Initial release","thumbnailImageUrl":"https://kaggle2.blob.core.windows.net/datasets-images/63/141/e5591c2bbb5997993769650c8bf5ab79/dataset-thumbnail.jpg","datasetVersionUrl":"/hugomathien/soccer/version/1","status":"ready"}],"newFileColumnDescriptions":[]}), document.getElementById("react-DatasetContainer-1"));
+ReactDOM.render(React.createElement(KaggleReactComponents.SiteHeaderContainer, {}), document.getElementById("react-SiteHeaderContainer-2"));
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+goog_snippet_vars = function() {
+    var w = window;
+    w.google_conversion_id = 955737689;
+    w.google_conversion_label = "K8aOCJvdz2oQ2czdxwM";
+    w.google_conversion_value = 0.00;
+    w.google_conversion_currency = "USD";
+    w.google_remarketing_only = false;
+}
+// DO NOT CHANGE THE CODE BELOW.
+goog_report_conversion = function(url) {
+    goog_snippet_vars();
+    window.google_conversion_format = "3";
+    var opt = new Object();
+    opt.onload_callback = function() {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+    }
+    var conv_handler = window['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+        conv_handler(opt);
+    }
+}
+/* ]]> */
+</script>
+<script type="text/javascript"
+src="//www.googleadservices.com/pagead/conversion_async.js">
+</script>
+
+
+
+
+<!-- Cheers, RD00155D48969Ep. -->
+
+</body>
+</html>
